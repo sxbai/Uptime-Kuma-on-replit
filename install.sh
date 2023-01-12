@@ -9,10 +9,6 @@
 #    bash <(curl -s https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/install.sh)
 echo "准备在您的 Replit 中安装 uptime-kuma"
 echo "您是否确保在运行此脚本之前配置了 replit.nix和.replit文件？"
-read -p "继续?输入Y安装输入N退出 <Y/n> " prompt
-if [[ $prompt == "N" || $prompt == "n" || $prompt == "No" || $prompt == "no" ]]; then
-  exit 0
-fi
 git clone https://github.com/louislam/uptime-kuma.git
 cd uptime-kuma && npm run setup
 cd /
