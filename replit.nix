@@ -1,7 +1,7 @@
 { pkgs }: {
     deps = [
         pkgs.nodejs-16_x
-        pkgs.cowsay
-		pkgs.bashInteractive
+		    pkgs.wget
+        pkgs.nodePackages.pm2
     ];
 }
