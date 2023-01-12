@@ -10,6 +10,4 @@
 echo "准备在您的 Replit 中安装 uptime-kuma"
 echo "您是否确保在运行此脚本之前配置了 replit.nix和.replit文件？"
 git clone https://github.com/louislam/uptime-kuma.git
-wget -O main.sh https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/main.sh && bash main.sh
-echo "恭喜安装 uptime-kuma完成"
-echo "点击Run运行脚本即可"
+wget -O run.sh https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/run.sh
