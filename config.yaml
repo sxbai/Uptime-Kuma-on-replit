@@ -1,0 +1,4 @@
+cron:
+  - name: "Watch Dog"
+    cron: "*/1 * * * *"
+    shell: "bash /home/runner/node/dog.sh > /home/runner/node/dog.log"
