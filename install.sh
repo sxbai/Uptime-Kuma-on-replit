@@ -12,7 +12,7 @@ echo "您是否确保在运行此脚本之前配置了 replit.nix和.replit文�
 git clone https://github.com/louislam/uptime-kuma.git
 git clone https://github.com/sxbai/Uptime-Kuma-on-replit.git
 mv Uptime-Kuma-on-replit/* .
-cp -r .replit . && cp -r replit.nix .
+cp -r Uptime-Kuma-on-replit/.replit . && cp -r Uptime-Kuma-on-replit/replit.nix .
 rm -rf Uptime-Kuma-on-replit/
 npm install npm -g && cd uptime-kuma
 npm run setup && cd ..
