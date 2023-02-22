@@ -1,7 +1,7 @@
 #!/bin/bash
 # Install uptime-kuma on Repl.it
 # Copyright © by 舒夏 All Rights Reserved.
-# 2023/01/12 12:05
+# 2023/02/22 14:05
 # 1. Create a new Repl.it as a Bash Server 
 # 2. Update the replit.nix file to include the code in this repo
 # 3. Restart the Repl
@@ -10,4 +10,10 @@
 echo "准备在您的 Replit 中安装 uptime-kuma"
 echo "您是否确保在运行此脚本之前配置了 replit.nix和.replit文件？"
 git clone https://github.com/louislam/uptime-kuma.git
-wget -O main.sh https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/main.sh
+git clone https://github.com/sxbai/Uptime-Kuma-on-replit.git
+mv Uptime-Kuma-on-replit/* .
+cp -r .replit . && cp -r replit.nix .
+rm -rf Uptime-Kuma-on-replit/
+npm install npm -g && cd uptime-kuma
+npm run setup && cd ..
+bash main.sh
