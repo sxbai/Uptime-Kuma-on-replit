@@ -11,7 +11,7 @@ echo "准备在您的 Replit 中安装 uptime-kuma"
 echo "您是否确保在运行此脚本之前配置了 replit.nix和.replit文件？"
 git clone https://github.com/sxbai/Uptime-Kuma-on-replit.git
 mv Uptime-Kuma-on-replit/* .
-cp -r Uptime-Kuma-on-replit/.replit . && cp -r Uptime-Kuma-on-replit/replit.nix .
+cp -r Uptime-Kuma-on-replit/.replit .replit && cp -r Uptime-Kuma-on-replit/replit.nix replit.nix
 rm -rf Uptime-Kuma-on-replit/
 git clone https://github.com/louislam/uptime-kuma.git
 npm install npm -g && cd uptime-kuma
