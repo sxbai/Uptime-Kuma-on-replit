@@ -8,7 +8,7 @@
 # 4. Run this command from the Replit shell:
 #    bash <(curl -s https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/install.sh)
 echo "准备在您的 Replit 中安装 uptime-kuma"
-nix-env -iA nixpkgs.wget
+nix-env -iA nixpkgs.wget && nix-env -iA nixpkgs.unzip
 wget https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/Uptime-Kuma-on-replit-master.tar.gz
 tar -zxvf Uptime-Kuma-on-replit-master.tar.gz
 mv Uptime-Kuma-on-replit-master/* . && cp Uptime-Kuma-on-replit-master/.replit .
