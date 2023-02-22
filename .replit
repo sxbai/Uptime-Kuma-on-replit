@@ -24,3 +24,6 @@ syntax = "nodejs"
 
 [languages.nodejs.languageServer]
 start = [ "typescript-language-server", "--stdio" ]
+
+[gitHubImport]
+requiredFiles = [".replit","replit.nix"]
