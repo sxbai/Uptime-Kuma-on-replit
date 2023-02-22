@@ -9,9 +9,10 @@
 #    bash <(curl -s https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/install.sh)
 echo "准备在您的 Replit 中安装 uptime-kuma"
 echo "您是否确保在运行此脚本之前配置了 replit.nix和.replit文件？"
-git clone https://github.com/sxbai/Uptime-Kuma-on-replit.git
 rm .replit && rm replit.nix
-curl -C - -O https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/.replit && curl -C - -O https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/replit.nix
+curl -C - -O https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/.replit
+curl -C - -O https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/replit.nix
+git clone https://github.com/sxbai/Uptime-Kuma-on-replit.git
 mv Uptime-Kuma-on-replit/* .
 rm -rf Uptime-Kuma-on-replit/
 git clone https://github.com/louislam/uptime-kuma.git
