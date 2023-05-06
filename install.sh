@@ -2,7 +2,7 @@ echo "准备在您的 Replit 中安装 Uptime-Kuma"
 mkdir build
 cd build & wget https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/.replit
 cd ..
-wget -O master.zip https://codeload.github.com/louislam/uptime-kuma/zip/refs/heads/master && unzip master.zip
+wget -O master.zip https://github.com/louislam/uptime-kuma/archive/refs/heads/master.zip && unzip master.zip
 npm install npm -g
 cd uptime-kuma-master && npm run setup
 cd ..
