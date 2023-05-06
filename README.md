@@ -1,7 +1,7 @@
 # 使用说明
 欢迎Fork本项目，Uptime-Kuma-on-replit
 
-一键搭建脚本 (环境选择`Node.js`)
+搭建命令行 (环境选择`Node.js`) [从上到下依次输入命令并回车]
 ```bash
 nix-env -iA nixpkgs.wget
 ```
@@ -42,4 +42,4 @@ rm -rf uptime-kuma-master/
 ```bash
 rm -rf index.js
 ```
-依次执行上面的两个命令
+[从上到下依次输入命令并回车]
