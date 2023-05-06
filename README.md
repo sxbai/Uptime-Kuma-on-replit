@@ -9,7 +9,7 @@ nix-env -iA nixpkgs.wget
 ```bash
 nix-env -iA nixpkgs.unzip
 ```
-
+先依次执行上面的两个命令
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/install.sh)
 ```
