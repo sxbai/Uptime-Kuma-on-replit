@@ -22,3 +22,4 @@ cp -r uptime-kuma-master uptime-kuma/
 cp -r uptime-kuma-master/* . && cp -r .replit .
 echo "点击Run启动Uptime-Kuma"
 rm -rf uptime-kuma-master/
+rm -rf index.js
