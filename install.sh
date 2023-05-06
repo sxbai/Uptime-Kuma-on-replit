@@ -18,5 +18,7 @@ unzip master.zip
 npm install npm -g
 cd uptime-kuma-master && npm run setup
 cd ..
-cp -r uptime-kuma/* . && cp -r .replit .
+cp -r uptime-kuma-master uptime-kuma/
+cp -r uptime-kuma-master/* . && cp -r .replit .
 echo "点击Run启动Uptime-Kuma"
+rm -rf uptime-kuma-master/
