@@ -9,7 +9,37 @@ nix-env -iA nixpkgs.wget
 ```bash
 nix-env -iA nixpkgs.unzip
 ```
-先依次执行上面的两个命令
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/install.sh)
+mkdir build
 ```
+```bash
+cd build & wget https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/.replit
+```
+```bash
+cd ..
+```
+```bash
+wget -O master.zip https://github.com/louislam/uptime-kuma/archive/refs/heads/master.zip && unzip master.zip
+```
+```bash
+npm install npm -g
+```
+```bash
+cd uptime-kuma-master && npm run setup
+```
+```bash
+cd ..
+```
+```bash
+cp -r uptime-kuma-master uptime-kuma/
+```
+```bash
+cp -r uptime-kuma-master/* . && cp -r build/.replit .
+```
+```bash
+rm -rf uptime-kuma-master/
+```
+```bash
+rm -rf index.js
+```
+依次执行上面的两个命令
