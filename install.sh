@@ -1,9 +1,11 @@
 echo "准备在您的 Replit 中安装 Uptime-Kuma"
+ls
 nix-env -iA nixpkgs.wget
 mkdir build
 cd build & wget https://raw.githubusercontent.com/sxbai/Uptime-Kuma-on-replit/master/.replit
 cd ..
 wget -O master.zip https://codeload.github.com/louislam/uptime-kuma/zip/refs/heads/master
+ls
 nix-env -iA nixpkgs.unzip
 unzip master.zip
 npm install npm -g
